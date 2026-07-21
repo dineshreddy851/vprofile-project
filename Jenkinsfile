@@ -24,8 +24,8 @@ pipeline {
                     echo "JAVA_HOME=$JAVA_HOME"
                     java -version
                     mvn -version
-                '''   
-                sh 'mvn -s settings.xml -DskipTests install'
+                    mvn -s settings.xml -DskipTests install
+                '''
             }
         }
     }
